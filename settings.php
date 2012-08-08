@@ -51,14 +51,14 @@ if (isset($_GET['success']) === true && empty($_GET['success']) === true) {
 				Last Name*:<br>
 				<input type="text" name="last_name" value="<?php echo $user_data['last_name']; ?>">
 			</li>
-		</ul>
-		<ul>
 			<li>
 				Email*:<br>
 				<input type="text" name="email" value="<?php echo $user_data['email']; ?>">
 			</li>
-		</ul>
-		<ul>
+			<li>
+				<input type="checkbox" name="allow_email">
+				Would you like to receive email from us?
+			</li>
 			<li>
 				<input type="submit" value="Update">
 			</li>
