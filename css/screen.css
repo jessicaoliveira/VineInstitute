@@ -1,0 +1,193 @@
+ /* Resets */
+ul {
+	padding:0;
+	margin:0 0 20px 0;
+	list-style:none;
+}
+
+h1, h2 {
+	padding:0;
+	margin:0 0 20px 0;
+	font-weight:normal;
+}
+
+p {
+	padding:0;
+	margin:0 0 20px 0;
+}
+
+a:link, a:visited {
+	text-decoration:underline;
+	color:#000;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+ul li {
+	padding:5px 0;
+}
+
+ul li input[type="text"], ul li input[type="password"] {
+	width:200px;
+}
+
+/* Headers */
+h1 {
+	font-size:1.8em;
+}
+
+h2 {
+	font-size:1.4em;
+}
+
+/* Menu */
+
+#topdiv {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  float: left;
+  background-color: white;
+  
+}
+
+#navMenu {
+  margin:0;
+  padding:0;
+}
+
+#navMenu ul {
+  margin:0;
+  padding:0;
+  line-height: 1.875em;
+}
+
+#navMenu li {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  float:left;
+  position: relative;
+  background: #999999;  
+}
+
+#navMenu ul li a {
+  text-align: center;
+  font-family: "Helvetica", sans-serif;
+  text-decoration: none;
+  height: 1.875em;
+  width: 13.375em;
+  display: block;
+  color: #000000;
+  color:black;
+  border: 0.063em solid white;
+
+}
+
+#navMenu ul ul {
+  position: absolute;
+  visibility: hidden;
+  top: 2.000em;
+}
+
+#navMenu ul li:hover ul {
+  visibility: visible;
+}
+
+#navMenu li:hover {
+  background: green;
+}
+
+#navMenu ul li:hover ul li a:hover {
+  background: green;
+  color: white;
+}
+
+#navMenu a:hover {
+  color: white;
+}
+
+#wrapper {
+  width: 1000px;
+  margin: 0 0 auto;
+  padding: 0 0 0 10px;
+}
+
+
+.clearFloat {
+  clear:both;
+  margin:0;
+  padding: 0;
+}
+
+/* Containers */
+body {
+	background:#589158
+;
+	font-family:Arial;
+	font-size:0.8em;
+}
+
+#container, footer {
+	background:#fff;
+	width:920px;
+	margin:0 auto;
+	padding:20px;
+}
+
+header {
+	width:940px;
+	padding:10px;
+	margin:0 auto 10px auto;
+}
+
+#container {
+	min-height:500px;
+	border-radius:5px 5px 0 0;
+}
+
+footer {
+	border-radius:0 0 5px 5px;
+}
+
+.widget {
+	margin-bottom:20px;
+}
+
+.widget h2 {
+	margin:0 0 10px 0;
+	padding:0 5px;
+	font-weight:normal;
+	border-bottom:1px solid #ddd;
+}
+
+.widget .inner {
+	margin:0 10px;
+}
+
+/* Aside */
+aside {
+	width:260px;
+	float:right;
+	border-left:1px dashed #aaa;
+	padding-left:15px;
+}
+
+/* Login */
+#login li.link {
+	margin-top:5px;
+}
+
+/* Footer */
+footer {
+	border-top:1px dashed #ddd;
+	color:#999;
+}
+
+/* Misc */
+.clear {
+	clear:both;
+}
