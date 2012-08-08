@@ -29,10 +29,12 @@ if (empty($_POST) === false) {
 if (isset($_GET['success']) === true && empty($_GET['success']) === true) {
 	echo 'Your details have been updated!';
 } else {
-	if (empty($_POST) === false && empty($errors) === true) {
+	if (empty($_POST) === false && empty($errors) === true) { 
+
 		$update_data = array(
-			'last_name'  => $_POST['last_name'],
-			'email'		 => $_POST['email'],
+			'last_name'    => $_POST['last_name'],
+			'email'		   => $_POST['email'],
+			'allow_email'  => ($_POST['allow_email'] == 'on') ? 1 : 0
 		);
 
 		update_user($session_user_id, $update_data);

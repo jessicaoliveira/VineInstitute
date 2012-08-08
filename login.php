@@ -9,7 +9,7 @@ if (empty($_POST) === false) {
 	if (empty($username) === true || empty($password) === true) {
 		$errors[] = 'You need to enter a username and password.';
 	} else if (user_exists($username) === false) {
-		$errors[] = 'We can\'t find that username. Have you registered?';
+		$errors[] = 'We can\'t find that username. Not a member? <a href="register.php">Register now</a>';
 	} else if (user_active($username) === false) {
 		$errors[] = 'You haven\'t activated your account!';
 	} else {
