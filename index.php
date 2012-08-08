@@ -3,9 +3,9 @@ include 'core/init.php';
 include 'includes/overall/header.php'; 
 
 if (has_access($session_user_id, 1) === true) {
- 	?> <p><b>(Administrator Access)</b></p> <?php
+ 	?> <p>(Administrator Access)</p> <?php
 } else if (has_access($session_user_id, 2) === true) {
-	?> <p><b>(Teacher Only Access)</b></p> <?php
+	?> <p>(Teacher Only Access)</p> <?php
 }
 ?> 
 
